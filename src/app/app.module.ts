@@ -17,7 +17,7 @@ const appRoutes: Routes = [
   { path: 'servers', component: ServersComponent }
 ];
 @NgModule({
-  imports: [BrowserModule, FormsModule, RouterModule],
+  imports: [BrowserModule, FormsModule, RouterModule.forRoot(appRoutes)],
   declarations: [
     AppComponent,
     HomeComponent,
